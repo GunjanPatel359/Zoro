@@ -1,0 +1,326 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.title {
+    width: 100%;
+    height: 75px;
+    line-height: 75px;
+    padding: 0px 100px;
+    position: fixed;
+    background-image: linear-gradient(rgb(38, 36, 173), rgb(68, 4, 105));
+    /*background-image: linear-gradient(rgb(34, 167, 211),rgb(63, 140, 228));*/
+    font-size: 50px;
+    font-weight: bold;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    cursor: pointer;
+    text-align: center;
+    z-index: 1;
+}
+
+nav div.box1 span {
+    display: none;
+}
+
+nav div.box1 span img {
+    margin-top: -10px;
+    margin-left: 20px;
+    width: 50px;
+    height: 50px;
+}
+
+#scrollbar_nav2 {
+    display: none;
+}
+
+@media screen and (max-width:600px) {
+    nav div.box1 span {
+        display: contents;
+    }
+}
+
+nav div span a {
+    color: white;
+    text-decoration: none;
+}
+
+.navigation {
+    list-style: none;
+    display: inline-flex;
+    letter-spacing: 1.3px;
+    margin-top: 7px;
+    margin-bottom: 0PX;
+}
+
+@media screen and (max-width:600px) {
+    nav div.box1 ul {
+        display: none;
+    }
+}
+
+nav div ul a {
+    border: 2px solid rgb(194, 185, 185);
+    text-decoration: none;
+    padding: 3px 10px 3px 10px;
+    font-size: 20px;
+    z-index: 3;
+}
+
+nav div.box1 {
+    background-color: rgb(194, 185, 185);
+    height: 37px;
+    position: fixed;
+    width: 100%;
+    z-index: 2;
+}
+
+@media screen and (max-width:600px) {
+    nav div.box1 {
+        height: 30px;
+    }
+}
+
+nav div ul a:hover {
+    border: 1px inset black;
+    border-radius: 20px;
+    background-color: rgb(156, 103, 206);
+    color: white;
+}
+
+#mobile_nav {
+    visibility: hidden;
+}
+
+@media screen and (max-width:600px) {
+    #mobile_nav {
+        border: 2px solid rgb(37, 33, 33);
+        border-top: 0px;
+        width: 160px;
+        background-color: rgb(194, 185, 185);
+        display: none;
+        line-height: 30px;
+        padding-left: 25px;
+        list-style: none;
+        margin-top: -15px;
+        font-size: 22px;
+        visibility: visible;
+    }
+    ol#mobile_nav li {
+        border-bottom: 1px solid rgb(37, 33, 33);
+    }
+    ol#mobile_nav li a {
+        text-decoration: none;
+        color: rgb(0, 0, 71)
+    }
+}
+
+div.logo {
+    margin-top: 37px;
+    background-image: url("project images/3542253.jpg");
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 560px;
+}
+
+@media screen and (max-width:600px) {
+    div.logo {
+        margin-top: 30px;
+    }
+}
+
+div.logo div.text-box {
+    height: 99%;
+}
+
+div div p.Anime::-webkit-scrollbar {
+    display: none
+}
+
+div div p.Anime {
+    overflow: auto;
+    text-align: justify;
+    padding-left: 50px;
+    padding-right: 50px;
+    text-indent: 45px;
+    background-color: rgb(194, 185, 185, 0.5);
+    color: rgb(57, 6, 105);
+    text-transform: capitalize;
+    padding-top: 20px;
+    margin-left: 35px;
+    width: 48vw;
+    height: 100%;
+    font-size: 26px;
+    letter-spacing: 1.3px;
+    word-spacing: 15px;
+    box-shadow: 5px 5px grey;
+}
+
+@media screen and (max-width:770px) {
+    div.logo div.text-box {
+        margin: auto;
+    }
+    div div p.Anime {
+        margin: auto;
+        padding: auto;
+        width: 600px;
+    }
+}
+
+@media screen and (max-width:600px) {
+    div div p.Anime {
+        width: auto;
+        letter-spacing: 1px;
+        word-spacing: 1.2px;
+        background-color: rgb(194, 185, 185, 0.2);
+        color: rgb(0, 0, 71);
+    }
+}
+
+@media screen and (max-width:400px) {
+    div div p.Anime {
+        padding: 20px;
+    }
+}
+
+div.full_site_background {
+    padding: 2px;
+    background-color: rgb(194, 185, 185, 0.5);
+    width: auto;
+    height: auto;
+}
+
+div a input.view_full_site {
+    font-size: 35px;
+    padding: 0px 15px;
+    border-radius: 30px;
+    background-color: rgb(151, 3, 77);
+    border-bottom: 3px inset rgb(68, 4, 105);
+    border-right: 3px inset rgb(68, 4, 105);
+    border-top: 3px inset rgb(2, 0, 109);
+    border-left: 3px inset rgb(2, 0, 109);
+    color: white;
+    cursor: pointer;
+}
+
+div a input.view_full_site:hover {
+    border-top: 3px inset rgb(68, 4, 105);
+    border-left: 3px inset rgb(68, 4, 105);
+    border-bottom: 3px inset rgb(2, 0, 109);
+    border-right: 3px inset rgb(2, 0, 109);
+    background-color: rgb(68, 4, 105);
+    color: white;
+}
+
+div.social_media {
+    background-image: url("project images/back2.jpg");
+    width: 100%;
+    background-position: center;
+    display: block;
+    height: auto;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0px;
+    z-index: -1;
+}
+
+div div.contact {
+    text-align: center;
+    padding: 30px;
+}
+
+div div span.title1 {
+    padding: 5px;
+    margin-top: 0px;
+    color: rgb(92, 18, 134);
+    /* color: rgb(80, 3, 124); */
+    font-size: 40px;
+    text-align: center;
+    border: 1px solid white;
+    border-radius: 30px;
+    background-color: rgba(206, 195, 195, 0.7);
+    z-index: 0;
+}
+
+div div.box {
+    padding-top: 60px;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+div div div.discord {
+    border-radius: 10px;
+    width: 250px;
+    height: 300px;
+    background-color: rgb(194, 185, 185, 0.85);
+    background-size: cover;
+    margin: 20px auto;
+    z-index: 0;
+}
+
+div div div.discord p.text {
+    font-size: 20px;
+    padding: 15px;
+}
+
+div div div.instagram {
+    border-radius: 10px;
+    width: 250px;
+    height: 300px;
+    background-color: rgb(194, 185, 185, 0.85);
+    background-size: cover;
+    margin: 20px auto;
+    z-index: 0;
+}
+
+div div div.instagram p.text {
+    font-size: 20px;
+    margin-top: 18px;
+    padding: 15px;
+}
+
+div div div.instagram p.text span.ins {
+    padding: 3px;
+    background-color: aliceblue;
+    border: 1px solid grey;
+    border-radius: 20px;
+    color: rgb(193, 53, 132);
+}
+
+div div div.gmail {
+    border-radius: 10px;
+    width: 250px;
+    height: 300px;
+    background-color: rgb(194, 185, 185, 0.85);
+    background-size: cover;
+    margin: 20px auto;
+    z-index: 0;
+}
+
+div div div.whatsapp {
+    border-radius: 10px;
+    width: 250px;
+    height: 300px;
+    background-color: rgb(194, 185, 185, 0.85);
+    background-size: cover;
+    margin: 20px auto;
+    z-index: 0;
+}
+
+div.social_media div.box div img {
+    margin-top: -35px;
+    width: 70px;
+    height: 70px;
+}
+
+.copyright {
+    border-top: 1px solid white;
+    background-color: black;
+    color: white;
+}
